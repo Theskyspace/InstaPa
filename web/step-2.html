@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step-2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;900&family=Lato:ital,wght@1,900&family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/technology.png" type="image/icon type">
+
+	<script src="https://kit.fontawesome.com/a833adcedf.js" crossorigin="anonymous"></script>
+
+
+	<script src="eel.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<section class="hashtags">
+		<h1>Add Your<br><span> HASHTAGS </span></h1>
+		<div class="upper-part">
+			<input type="text" name="hashtag" placeholder="eg. Flowers" id="myInput" required="">
+			<button onclick="newElement();" value="ADD" class="addBtn">ADD</button>
+		</div>	
+		<ul id="myUL">
+		  
+		</ul>
+
+	</section>
+
+
+	<section class="comments">
+		<h1>Add Your<br><span> COMMENTS </span></h1>
+		<div class="lower-part">
+			<input type="text" name="hashtag" placeholder="eg. Thats awesome !!" id="comment" required="">
+			<button onclick="newcomment();" value="ADD" class="addBtn">ADD</button>
+		</div>	
+		<ul id="myULcomments">
+		  
+		</ul>
+	</section>
+	<div class="essentials">
+		<i class="fas fa-heart fa-3x" style="color: red"></i>
+		<input type="number" id="quantity" name="quantity" min="1" max="100">
+		<a href="Terminate.html"><button class="submitme" type="submit" onclick="Like();" >Start</button></a>
+	</div>
+</body>
+</html>
