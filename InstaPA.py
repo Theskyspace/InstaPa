@@ -43,22 +43,24 @@ def MainProcess(hashtags,comments,no_of_likes):
 		pic = driver.find_element_by_class_name("_9AhH0")    
 		pic.click() 
 
+
 		for i in range(no_of_likes + 1): 
 
 			time.sleep(10)
 
 			#Likes the photo
-			like = driver.find_element_by_class_name("wpO6b ")
+			like = driver.find_element_by_class_name("_9AhH0")
+			like.click()
 			like.click()
 
 			time.sleep(random.randint(2,5))
 
 			# Writes a comment
 			if comments != None:
-				driver.find_element_by_tag_name('textarea').click()
+				driver.find_element_by_class_name('Ypffh').click()
 				comment = random.choice(comments)
-				driver.find_element_by_tag_name('textarea').send_keys(comment)
-				driver.find_element_by_tag_name('textarea').send_keys(Keys.RETURN)
+				driver.find_element_by_class_name('Ypffh').send_keys(comment)
+				driver.find_element_by_class_name('Ypffh').send_keys(Keys.RETURN)
 				
 			#next photo
 			for i in range(random.randint(1,8)):		
